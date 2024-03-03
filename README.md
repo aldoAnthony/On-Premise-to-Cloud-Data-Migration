@@ -7,7 +7,7 @@ This project revolves around executing a seamless migration of data from on-prem
 
 <h2>Language and Libraries Used</h2>
 
-- <b>Bash Scripting/b> 
+- <b>Bash Scripting</b> 
 
 
 <h2>Environments/Cloud Services Used </h2>
@@ -22,10 +22,11 @@ This project revolves around executing a seamless migration of data from on-prem
 - <b>Amazon EC2</b>
 - <b>Amazon S3</b>
 - <b>Amazon VPC</b>
-        
+
 
 <h2>Project Workflow:</h2>
-  
+
+
 - **Establishing Prerequisites:**
   - Configured AWS account with Admin privileges
   - Generated a new key pair for secure access
@@ -41,11 +42,10 @@ This project revolves around executing a seamless migration of data from on-prem
   - Created an NFS-based file share associated with the file gateway
   - Connected to the Linux instance via SSH from the Windows instance
   - Mounted the NFS file share on the Linux instance
-**Configuring Alarm Triggers with CloudWatch:**
+- **Configuring Alarm Triggers with CloudWatch:**
   - Configured a CloudWatch alarm for data transfer thresholds
   - Set up email notifications using Amazon SNS
   - Tested the alarm by transferring data to the mounted NFS file share
-**Testing Your System:**
+- **Testing Your System:**
   - Successfully transferred data to the NFS file share
   - Validated the data transfer by inspecting files on the NFS mount
-  
